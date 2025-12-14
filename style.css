@@ -1,0 +1,409 @@
+body {
+    background-color: rgb(255, 172, 214);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: rgb(189, 2, 102);
+}
+
+a:hover {
+    color: white;
+}
+
+h2, h3, p {
+    padding: 0 15px;
+    color: rgb(189, 2, 102);
+}
+
+p {
+    background-color: hotpink;
+    padding: 10px;
+    margin: 10px 10px 20px 10px;
+}
+
+.logo {
+    background-color: hotpink;
+    padding: 10px;
+    color: rgb(189, 2, 102);
+}
+
+.logo h1 {
+    animation: textGlow 2s infinite alternate;
+}
+
+@keyframes textGlow {
+    from { letter-spacing: 1px; }
+    to { letter-spacing: 3px; }
+}
+
+.menu {
+    display: none;
+    background-color: deeppink;
+    text-align: center;
+}
+
+.menu a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: rgb(189, 2, 102);
+}
+
+.menu a.active {
+  background-color: rgb(189, 2, 102);
+  color: white;
+}
+
+.introduction {
+    width: 70%;
+    float: left;
+}
+
+.photo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.photo2 {
+    float: left;
+    padding: 10px;
+    height: 300px;
+    margin-left: 30px;
+}
+
+.list {
+    margin: 10px 20px 10px 10px;
+    text-align: center;
+    padding: 10px;
+    float: right;
+    width: 60%;
+}
+
+.film-list {
+    padding: 0 30px;
+    font-size: 15px;
+    background-color: hotpink;
+}
+
+.film-list li {
+    margin: 10px;
+    color: deeppink;
+}
+
+.film-list a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.film-list a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    color: rgb(189, 2, 102);
+}
+
+.slideshow-container {
+    width: 250px;
+    height: 420px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    animation: slideshow 21s infinite;
+    text-align: center;
+}
+
+.slide img {
+    width: 250px;
+    height: auto;
+}
+
+.slide p {
+    background-color: rgba(189, 2, 102, 0.8);
+    color: white;
+    padding: 6px;
+    margin-top: 5px;
+    font-size: 14px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 3s; }
+.slide:nth-child(3) { animation-delay: 6s; }
+.slide:nth-child(4) { animation-delay: 9s; }
+.slide:nth-child(5) { animation-delay: 12s; }
+.slide:nth-child(6) { animation-delay: 15s; }
+.slide:nth-child(7) { animation-delay: 18s; }
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.poster {
+    background-color: hotpink;
+    width: 500px;
+    height: 800px;
+    margin: 20px;
+    float: left;
+}
+
+.film-container {
+    width: 900px;
+    min-height: 800px;
+    margin: 20px;
+    background-color: rgb(255, 172, 214);
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(120, 0, 70);
+    float: right;
+}
+
+.ruth-container {
+    width: 1000px;
+    margin: 40px auto;
+    background-color: rgb(255, 197, 226);
+    padding: 30px;
+    border-radius: 20px;
+    color: rgb(120, 0, 70);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.ruth-intro {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.ruth-text {
+    flex: 2;
+}
+
+.ruth-image {
+    flex: 1;
+    text-align: center;
+}
+
+.ruth-image img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+}
+
+.img-caption {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.ruth-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 40px 0;
+}
+
+.ruth-table th,
+.ruth-table td {
+    border: 1px solid rgb(189, 2, 102);
+    padding: 10px;
+}
+
+.ruth-table th {
+    background-color: rgb(255, 172, 214);
+    text-align: left;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ruth-nav {
+    width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(255, 172, 214);
+    border-radius: 15px;
+    color: rgb(120, 0, 70);
+}
+
+.ruth-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ruth-nav li {
+    margin: 10px 0;
+}
+
+.ruth-nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ruth-nav a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    width: 900px;
+    margin: 40px auto;
+    background-color: rgb(255, 197, 226);
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(120, 0, 70);
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(189, 2, 102);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(189, 2, 102);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: deeppink;
+}
+
+@media (max-width: 599px) {
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-mobile a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid hotpink;
+        font-size: 18px;
+    }
+
+    .introduction,
+    .photo1,
+    .photo2,
+    .list {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .photo2 {
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+
+    .menu-tablet {
+        display: flex;
+        justify-content: space-around;
+        background-color: deeppink;
+    }
+
+    .introduction {
+        width: 60%;
+        float: left;
+    }
+
+    .list {
+        width: 40%;
+        float: right;
+    }
+
+    .photo1,
+    .photo2 {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    footer {
+        clear: both;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .menu-desktop {
+        display: block;
+        background-color: deeppink;
+        overflow: hidden;
+    }
+
+    .menu-desktop a {
+        float: left;
+        padding: 14px 16px;
+    }
+
+    footer {
+        clear: both;
+    }
+}
