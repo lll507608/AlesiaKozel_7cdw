@@ -8,6 +8,7 @@ body {
     background-color: hotpink;
     padding: 10px;
     color: rgb(189, 2, 102);}
+
 .logo h1 {
     animation: textGlow 2s infinite alternate;
 }
@@ -337,23 +338,6 @@ input[type="reset"]:hover {
 }
 
 
-.topnav {
-    overflow: hidden;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.topnav a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: white;
-    display: inline-block;
-}
-
-.topnav a.active {
-    background-color: rgb(189, 2, 102);
-}
-
 @media screen and (min-width: 1200px) {
     .desktop-menu { display: block; }
     .tablet-menu, .mobile-menu { display: none; }
@@ -388,4 +372,5 @@ input[type="reset"]:hover {
 
     .photo2 { display: none; }
 }
+
 
