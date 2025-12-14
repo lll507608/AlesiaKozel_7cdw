@@ -366,18 +366,15 @@ input[type="reset"]:hover {
     .mobile-menu { display: block; }
 
     .logo {
-        width="100%";
+        width="599px";
 
-    .introduction, .photo1, .list {
+    .introduction, .list {
         padding: 10px;
-        font-size: 14px;
-    }
-        .photo1 {
-            width= 30%;
-        }
+        font-size: 14px;}
 
-    .photo2, { display: none; }
+    .photo2, .photo1 { display: none; }
 }
+
 
 
 
