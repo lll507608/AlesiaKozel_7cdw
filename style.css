@@ -354,20 +354,6 @@ input[type="reset"]:hover {
     background-color: rgb(189, 2, 102);
 }
 
-/* ------------------- BLOKI ------------------- */
-.introduction, .photo1, .photo2, .list {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgb(255, 172, 214);
-    color: rgb(120, 0, 70);
-}
-
-.photo1 img, .photo2 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
 @media screen and (min-width: 1200px) {
     .desktop-menu { display: block; }
     .tablet-menu, .mobile-menu { display: none; }
@@ -402,3 +388,4 @@ input[type="reset"]:hover {
 
     .photo2 { display: none; }
 }
+
