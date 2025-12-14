@@ -337,13 +337,36 @@ input[type="reset"]:hover {
 }
 
 
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
+.topnav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    display: inline-block;
+}
 
+.topnav a.active {
+    background-color: rgb(189, 2, 102);
+}
 
+/* ------------------- BLOKI ------------------- */
+.introduction, .photo1, .photo2, .list {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 172, 214);
+    color: rgb(120, 0, 70);
+}
 
-
-
-
+.photo1 img, .photo2 img {
+    width: 100%;
+    border-radius: 15px;
+}
 
 @media screen and (min-width: 1200px) {
     .desktop-menu { display: block; }
@@ -355,19 +378,19 @@ input[type="reset"]:hover {
         margin-right: auto;
     }
 
-    .photo2 { display: block; } /* wszystko widoczne */
+    .photo2 { display: block; } 
 }
 
-/* ------------------- TABLET 600–1199px ------------------- */
+
 @media screen and (min-width: 600px) and (max-width: 1199px) {
     .desktop-menu { display: none; }
     .tablet-menu { display: block; }
     .mobile-menu { display: none; }
 
-    .photo2 { display: none; } /* zdjęcie Barbie logo znika */
+    .photo2 { display: none; } 
 }
 
-/* ------------------- TELEFON <600px ------------------- */
+
 @media screen and (max-width: 599px) {
     .desktop-menu, .tablet-menu { display: none; }
     .mobile-menu { display: block; }
@@ -377,6 +400,5 @@ input[type="reset"]:hover {
         font-size: 14px;
     }
 
-    .photo2 { display: none; } /* zdjęcie Barbie logo znika */
+    .photo2 { display: none; }
 }
-
