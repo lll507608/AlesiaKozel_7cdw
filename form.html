@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wuiz">
+    <meta name="keywords" content="Barbie">
+    <meta name="author" content="Alesia Kozel">
+<title>Quizz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="logo">
+    <h1>Top 7 filmów Barbie</h1>
+</div>
+
+<div class="topnav">
+    <a href="index.html">Strona główna</a>
+    <a href="gallery.html">Galeria</a>
+    <a href="form.html" class="active">Quiz</a>
+    <a href="ruth.html">Więcej informacji o Ruth Handler</a>
+</div>
+
+<div class="form-container">
+
+<form action="mailto:alesiak@gmail.com" method="post" enctype="text/plain">
+
+    <h2>Dane</h2>
+
+    <label>Imię:
+        <input type="text" name="imie" required>
+    </label>
+
+    <label>Email:
+        <input type="email" name="email">
+    </label>
+
+    <h2>Pytania quizowe</h2>
+
+    <p>1. Kto stworzył lalkę Barbie?</p>
+    <label><input type="radio" name="pyt1" value="Ruth Handler"> Ruth Handler</label>
+    <label><input type="radio" name="pyt1" value="Walt Disney"> Walt Disney</label>
+    <label><input type="radio" name="pyt1" value="Mattel"> Mattel</label>
+
+    <p>2. W którym roku zaprezentowano pierwszą lalkę Barbie?</p>
+    <select name="pyt2">
+        <option value="">-- wybierz --</option>
+        <option value="1959">1959</option>
+        <option value="1965">1965</option>
+        <option value="1972">1972</option>
+    </select>
+
+    <p>3. Na jakiej baśni oparty jest film „Barbie jako Księżniczka i Żebraczka”?</p>
+    <input type="text" name="pyt3">
+    <p>4. Które filmy Barbie widziałaś/widziałeś? (zaznacz dowolne)</p>
+    <label><input type="checkbox" name="pyt4" value="Jezioro Łabędzie"> Barbie i Jezioro Łabędzie</label>
+    <label><input type="checkbox" name="pyt4" value="Roszpunka"> Barbie jako Roszpunka</label>
+    <label><input type="checkbox" name="pyt4" value="Dziadek do Orzechów"> Barbie w Dziadku do Orzechów</label>
+    <label><input type="checkbox" name="pyt4" value="Trzy Muszkieterki"> Barbie i Trzy Muszkieterki</label>
+
+    <p>5. Z jakiego miasta pochodziła Ruth Handler?</p>
+    <input type="text" name="pyt5">
+
+    <p>6. Który film Barbie najbardziej Ci się podobał i dlaczego?</p>
+    <textarea name="opinia" rows="5"></textarea>
+
+    <div class="form-buttons">
+        <input type="submit" value="Wyślij quiz">
+        <input type="reset" value="Wyczyść">
+    </div>
+</form>
+</div>
+
+<footer>
+    Stronę wykonała: Alesia Kozel 2ta
+</footer>
+</body>
+</html>
