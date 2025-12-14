@@ -365,12 +365,19 @@ input[type="reset"]:hover {
     .desktop-menu, .tablet-menu { display: none; }
     .mobile-menu { display: block; }
 
+    .logo {
+        width="100%";
+
     .introduction, .photo1, .list {
         padding: 10px;
         font-size: 14px;
     }
+        .photo1 {
+            width= 30%;
+        }
 
-    .photo2 { display: none; }
+    .photo2, { display: none; }
 }
+
 
 
